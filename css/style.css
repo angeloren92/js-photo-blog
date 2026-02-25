@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Edu+TAS+Beginner:wght@400..700&family=Sometype+Mono:ital,wght@0,400..700;1,400..700&display=swap');
 
+
+
 /* backgrounds */
 .header { 
     background-image: url(../img/wall.png); 
@@ -15,6 +17,7 @@
 
 /*header title*/
 h1 { 
+    font-family: 'Edu Tas Beginner', sans-serif;
     font-size: 5rem; 
 }
 
@@ -28,12 +31,12 @@ img[src~="./img/pin.svg"] {
     top: -0.8rem; 
 }
 
-figure > .card-image { 
+figure > .img-fluid { 
     aspect-ratio: 1 / 1; 
 }
 
 /*Cards fonts*/
-.card-body > h2 { 
+.card-body > h2, h1 { 
     font-family: 'Edu Tas Beginner', sans-serif; 
 }
 
