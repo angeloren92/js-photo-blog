@@ -15,7 +15,7 @@ fetch(endpoint)
                     <img src="./img/pin.svg" alt="" class="position-absolute start-50 translate-middle-x">
                     <figure class="card-body">
                         <img src="${url}" alt="${title}" class="img-fluid mb-3">
-                        <p class="text-muted mb-0">${date}</p>
+                        <p class="text-muted fw-bold mb-0">${date}</p>
                         <h2 class="h4 fw-bold">${title.toUpperCase()}</h2>
                     </figure>
                 </div>

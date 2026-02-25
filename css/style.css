@@ -1,6 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Edu+TAS+Beginner:wght@400..700&family=Sometype+Mono:ital,wght@0,400..700;1,400..700&display=swap');
 
-
+:root {
+    --font-titoli: 'Edu Tas Beginner', sans-serif;
+    --font-date: 'Sometype Mono', monospace;
+}
 
 /* backgrounds */
 .header { 
@@ -17,7 +20,7 @@
 
 /*header title*/
 h1 { 
-    font-family: 'Edu Tas Beginner', sans-serif;
+    font-family: var(--font-titoli);
     font-size: 5rem; 
 }
 
@@ -37,9 +40,9 @@ figure > .img-fluid {
 
 /*Cards fonts*/
 .card-body > h2, h1 { 
-    font-family: 'Edu Tas Beginner', sans-serif; 
+    font-family: var(--font-titoli); 
 }
 
 .card-body > p { 
-    font-family: 'Sometype Mono', monospace; 
+    font-family: var(--font-date); 
 }
