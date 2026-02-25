@@ -5,3 +5,11 @@
 .main {
     background-image: url(../img/cork.png);
 }
+
+img[src~="./img/pin.svg"] {
+    top: -0.8rem;
+}
+
+.card-image {
+    aspect-ratio: 1 / 1;
+}
