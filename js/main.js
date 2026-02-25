@@ -12,9 +12,9 @@ fetch(endpoint)
             markup += `                
             <div class="col">
                 <div class="card rounded-0 position-relative">
-                    <img src="./img/pin.svg" alt="${title}" class="position-absolute start-50 translate-middle-x">
+                    <img src="./img/pin.svg" alt="" class="position-absolute start-50 translate-middle-x">
                     <figure class="card-body">
-                        <img src="${url}" alt="" class="img-fluid mb-3">
+                        <img src="${url}" alt="${title}" class="img-fluid mb-3">
                         <h2 class="h5 text-muted">${title}</h2>
                         <p class="text-muted mb-2">${date}</p>
                     </figure>
