@@ -1,27 +1,42 @@
-/* */
-.header {
-    background-image: url(../img/wall.png);
+@import url('https://fonts.googleapis.com/css2?family=Edu+TAS+Beginner:wght@400..700&family=Sometype+Mono:ital,wght@0,400..700;1,400..700&display=swap');
+
+/* backgrounds */
+.header { 
+    background-image: url(../img/wall.png); 
+}
+
+.main { 
+    background-image: url(../img/cork.png); 
+}
+
+.header, .main { 
     background-size: contain; 
 }
 
-.main {
-    background-image: url(../img/cork.png);
-    background-size: contain; 
+/*header title*/
+h1 { 
+    font-size: 5rem; 
 }
 
 /*Cards styling*/
-.card {
-    box-shadow: 0.1rem 0.1rem 0.4rem rgba(53, 53, 53, 0.726);
+.card { 
+    box-shadow: 0.1rem 0.1rem 0.4rem rgba(53, 53, 53, 0.726); 
 }
 
-img[src~="./img/pin.svg"] {
-    top: -0.8rem;
+/*Cards image*/
+img[src~="./img/pin.svg"] { 
+    top: -0.8rem; 
 }
 
-.card-image { 
+figure > .card-image { 
     aspect-ratio: 1 / 1; 
 }
 
-h1 {
-    font-size: 5rem;
+/*Cards fonts*/
+.card-body > h2 { 
+    font-family: 'Edu Tas Beginner', 'sans-serif'; 
+}
+
+.card-body > p { 
+    font-family: 'Sometype Mono', 'monospace'; 
 }
