@@ -1,15 +1,27 @@
+/* */
 .header {
     background-image: url(../img/wall.png);
+    background-size: contain; 
 }
 
 .main {
     background-image: url(../img/cork.png);
+    background-size: contain; 
+}
+
+/*Cards styling*/
+.card {
+    box-shadow: 0.1rem 0.1rem 0.4rem rgba(53, 53, 53, 0.726);
 }
 
 img[src~="./img/pin.svg"] {
     top: -0.8rem;
 }
 
-.card-image {
-    aspect-ratio: 1 / 1;
+.card-image { 
+    aspect-ratio: 1 / 1; 
+}
+
+h1 {
+    font-size: 5rem;
 }
