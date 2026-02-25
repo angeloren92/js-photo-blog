@@ -34,9 +34,9 @@ figure > .card-image {
 
 /*Cards fonts*/
 .card-body > h2 { 
-    font-family: 'Edu Tas Beginner', 'sans-serif'; 
+    font-family: 'Edu Tas Beginner', sans-serif; 
 }
 
 .card-body > p { 
-    font-family: 'Sometype Mono', 'monospace'; 
+    font-family: 'Sometype Mono', monospace; 
 }
