@@ -11,7 +11,7 @@ function getMarkup(data) {
                 <div class="card rounded-0 position-relative">
                     <img src="./img/pin.svg" alt="image of pin for postcards" class="position-absolute start-50 translate-middle-x">
                     <figure class="card-body mb-0">
-                        <img id="cardImg" src="${url}" alt="${title}" class="img-fluid mb-3">
+                        <img src="${url}" alt="${title}" class="cardImg img-fluid mb-3" onclick="on()">
                         <p class="text-muted fw-bold mb-0">${date}</p>
                         <h2 class="h4 fw-bold mb-0">${title.toUpperCase()}</h2>
                     </figure>
@@ -21,22 +21,12 @@ function getMarkup(data) {
     return markup;
 }
 
-function on() {
-    document.getElementById("overlay").style.display = "block";
-}
-
-function off() {
-    document.getElementById("overlay").style.display = "none";
-}
-
-function getOverlayMarkup(nodesCardsImg, overlay) {
+function insertOverlayMarkup(nodesCardsImg, overlayEl) {
     nodesCardsImg.forEach((element) => {
         element.addEventListener('click', function () {
             const src = element.src;
             const alt = element.alt;
-            //console.log(src, alt)
-            overlayMarkup = `
-            <div id="overlay">
+            const overlayMarkup = `       
                 <div class="row-cols-1 my-4">
                     <div class="col">
                         <button class="mb-5" onclick="off()">Chiudi</button>
@@ -45,9 +35,15 @@ function getOverlayMarkup(nodesCardsImg, overlay) {
                         <img src="${src}" alt="${alt}" class="img-fluid w-50">
                     </div>
                 </div>
-            </div>
                 `
-            overlay.insertAdjacentHTML('beforeend', overlayMarkup)
+            overlayEl.innerHTML = overlayMarkup;
         })
     })
+}
+
+function on() {
+    document.getElementById("overlay").style.display = "block";
+}
+function off() {
+    document.getElementById("overlay").style.display = "none";
 }
