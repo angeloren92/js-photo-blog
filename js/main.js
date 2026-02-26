@@ -7,3 +7,12 @@ fetch(endpoint)
         const markup = getMarkup(data);
         rowEl.insertAdjacentHTML('beforeend', markup)
     })
+
+    
+function on() {
+    document.getElementById("overlay").style.display = "block";
+}
+
+function off() {
+    document.getElementById("overlay").style.display = "none";
+}
