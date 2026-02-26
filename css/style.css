@@ -81,10 +81,9 @@ figure > .img-fluid {
 /*Hover Cards*/
 .card:hover {
     z-index: 1;
-    position: absolute;
+    position: relative;
     box-shadow: 0.5rem 0.5rem 0.8rem rgba(53, 53, 53, 0.726); 
-    rotate: 10deg;
-    zoom: 120%;
+    transform: scale(1.2) rotate(10deg);
 
     img[src~="./img/pin.svg"] {
         opacity: 0;
