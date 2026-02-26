@@ -7,7 +7,7 @@ function getMarkup(data) {
     let markup = '';
     data.forEach(({ title, date, url }) => {
         markup += `                
-            <div class="col-12 col-md-6 col-lg-4">
+            <div class="col-8 col-md-6 col-lg-4 mx-auto">
                 <div class="card rounded-0 bg-white">
                     <img src="./img/pin.svg" alt="image of pin for postcards" class="position-absolute start-50 translate-middle-x">
                     <figure class="card-body mb-0">
