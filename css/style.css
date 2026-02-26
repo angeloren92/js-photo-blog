@@ -13,6 +13,7 @@
 
 .main { 
     background-image: url(../img/cork.png); 
+    min-height: 100vh;
 }
 
 .header, .main { 
@@ -28,11 +29,15 @@ h1 {
 /*Cards styling*/
 .card { 
     box-shadow: 0.1rem 0.1rem 0.4rem rgba(53, 53, 53, 0.726); 
+    transition: 0.25s;
+    transition-timing-function: linear;
 }
 
 /*Cards image*/
 img[src~="./img/pin.svg"] { 
     top: -0.8rem; 
+    transition: 0.2s;
+    transition-timing-function: linear;
 }
 
 figure > .img-fluid { 
@@ -59,7 +64,7 @@ figure > .img-fluid {
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: rgba(0,0,0,0.5);
+  background-color: rgba(0, 0, 0, 0.575);
   z-index: 2;
 }
 
@@ -71,4 +76,17 @@ figure > .img-fluid {
 
 #overlay button {
     cursor: pointer;
+}
+
+/*Hover Cards*/
+.card:hover {
+    z-index: 1;
+    position: absolute;
+    box-shadow: 0.5rem 0.5rem 0.8rem rgba(53, 53, 53, 0.726); 
+    rotate: 10deg;
+    zoom: 120%;
+
+    img[src~="./img/pin.svg"] {
+        opacity: 0;
+    }
 }

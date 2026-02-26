@@ -9,7 +9,6 @@ fetch(endpoint)
         rowEl.insertAdjacentHTML('beforeend', markup);
         const cardImgEl = document.querySelectorAll('.cardImg');
         insertOverlayMarkup(cardImgEl, overlayEl);
-        
     })
 
 
