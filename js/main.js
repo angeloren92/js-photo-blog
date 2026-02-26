@@ -5,14 +5,17 @@ fetch(endpoint)
     .then((response) => response.json())
     .then((data) => {
         const markup = getMarkup(data);
-        rowEl.insertAdjacentHTML('beforeend', markup)
+        rowEl.insertAdjacentHTML('beforeend', markup);
+
+        const cardImgEl = document.querySelectorAll('#cardImg')
+        cardImgEl.forEach((element) => {
+            element.addEventListener('click', function() {
+                console.log('click')
+            })
+        })
+
     })
 
-    
-function on() {
-    document.getElementById("overlay").style.display = "block";
-}
 
-function off() {
-    document.getElementById("overlay").style.display = "none";
-}
+
+

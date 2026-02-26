@@ -37,6 +37,7 @@ img[src~="./img/pin.svg"] {
 
 figure > .img-fluid { 
     aspect-ratio: 1 / 1; 
+    cursor: pointer;
 }
 
 /*Cards fonts*/
