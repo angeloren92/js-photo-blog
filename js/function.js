@@ -22,18 +22,6 @@ function getMarkup(data) {
 }
 
 
-
-    // <div id="overlay">
-    //     <div class="row-cols-1 my-4">
-    //         <div class="col">
-    //             <button class="mb-5" onclick="off()">Chiudi</button>
-    //         </div>
-    //         <div class="col">
-    //             <img src="./img/cork.png" alt="" class="img-fluid w-50">
-    //         </div>
-    //     </div>
-    // </div>
-
 function on() {
     document.getElementById("overlay").style.display = "block";
 }
